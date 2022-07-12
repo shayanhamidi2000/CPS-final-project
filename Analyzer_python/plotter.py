@@ -30,8 +30,8 @@ class plotter:
 
     def check_window_size(self):
         if len(self.points) > self.window_size:
-            self.points.pop()
-            self.times.pop() 
+            self.points.pop(0)
+            self.times.pop(0) 
 
     def add_point(self, y):
         time_added = self.get_time()

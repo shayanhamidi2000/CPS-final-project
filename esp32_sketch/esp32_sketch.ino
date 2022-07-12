@@ -32,6 +32,7 @@ String get_last_whole_data_from_master_buffer(){
 
 void process_sensor_data(){
   SerialBT.print(sensor_buffer);
+  sensor_buffer = "";
   delay(10);
 }
 

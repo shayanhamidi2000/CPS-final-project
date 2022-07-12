@@ -18,7 +18,7 @@ except CannotFindPort as exp:
     print(exp.what())
     exit()
 
-Plotter = plotter(window_size = 500, figsize=(10, 10))
+Plotter = plotter(window_size = 100, figsize=(10, 10))
 for i in range(100000):
     Plotter.add_point(bt.get_next_data_from_sensor())
 
