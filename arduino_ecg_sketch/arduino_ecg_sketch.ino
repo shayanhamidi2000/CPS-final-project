@@ -26,6 +26,5 @@ void loop() {
   if(last_ecg_value != -1){
     String sensor_data = String(last_ecg_value)+END_SIGN;
     Serial.write(&sensor_data[0]);
-    delay(10);
   }
 }
